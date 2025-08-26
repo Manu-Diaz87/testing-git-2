@@ -11,9 +11,9 @@
 
 - git remote add origin <url_repo_remoto>: Nos va a permitir vincular el repo local con el repositorio remoto, para poder subir los cambios a la nube, ya sea para crear de cero o actualizar futuros cambios. Este paso se suele realizar una sola vez. Esto nos va a permitir ejecutar comandos como 'push' y 'pull'.
 
-- git push: Nos permite subir los cambios realizados desde el repo local al remoto, previamente debemos realizar al menos un commit. 
+- git push -u origin main: Nos permite subir los cambios realizados desde el repo local al remoto, previamente debemos realizar al menos un commit. El comando -u nos permite que en el próximo push se omita parte del origin.
 
-- git pull: Nos permite actualizar el repo local en base al repo remoto, es decir, traer las actualizaciones desde el repositorio remoto.
+- git pull -u origin main: Nos permite actualizar el repo local en base al repo remoto, es decir, traer las actualizaciones desde el repositorio remoto. idem -u del push.
 
 
 ### Manejo ramas:
@@ -23,3 +23,4 @@
 - git branch -d <nombre_rama>: Nos permite eliminar una rama.
 - git branch -M <nombre_rama>: Renombrar la rama sobre la cual estamos posicionados.
 - git switch <rama>: Nos permite movernos entre ramas
+- git merge <rama>: Nos permite unir/fusionar una rama con la actual, es decir, en la cual estoy posicionado actualmente.
